@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Inter:wght@100&family=Poppins&family=Quicksand:wght@300&family=Roboto&display=swap');
+
+:root{
+    --clr-bg:#dddddd;
+    --clr-content: rgba(5, 5, 5, 0.432);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100vh;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+aside.image-sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(houses.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+
+.logo{
+    background-color: var(--clr-content);
+    width: 100%;
+    height: 15vh;
+    margin-top: 15vh;
+    overflow: hidden;
+}
+
+.logoText{
+    display: flex;
+    justify-content: center;
+    font-family: "QuickSand";
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 30px;
+    text-align: center;
+    color: goldenrod;
+    width: 100%;
+    height: 100%
+}
+
+.credits{
+    color: rgb(235, 235, 212);
+}
+.formMessage{
+    background-color: var(--clr-bg);
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.welcomeMessage{
+    padding: 50px 150px 0 30px;
+    font-family: 'Arimo',Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+#form{
+    padding-top: 10px;
+    background-color: var(--clr-content);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.signUp{
+    padding: 100px 30px 10px;
+}
+
+fieldset{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+input{
+    height: 28px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 2px 2px;
+    outline: none;
+}
+
+input:focus{
+    height: 28px;
+    font-size: 15px;
+    border-color: black;
+}
+
+
+#password.errors{
+    border: 1px solid rgb(255, 70, 70);
+}
+
+#confirm.errors{
+    border: 1px solid rgb(255, 70, 70);
+}
+
+.error{
+    margin-top: 5px;
+    display: none;
+    font-size: 10px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.separator{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.082);
+    padding: 30px 150px 0 30px;
+    width: 100%;
+    background-color: var(--clr-bg);
+    margin-top: 40px;
+}
+
+button{
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: goldenrod;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.03);
+}
+
+.login{
+    padding:20px 0 0 30px
+}
+
+.member{
+    text-decoration: none;
+    color: azure;
+}

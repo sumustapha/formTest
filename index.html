@@ -9,22 +9,58 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <section class="image">
-        <div class="logo"></div>
-        <p class="credits"></p>
-    </section>
+    <aside class="image-sidebar">
+        <div class="logo">
+            <h1 class="logoText">OTOM8</h1>
+        </div>
+        <p class="credits">Image by <strong>@Dave Goudreau</strong></p>
+    </aside>
     <section class="formMessage">
         <span class="welcome">
-            <p class="welcomeMessage"></p>
+            <p class="welcomeMessage">OTOM8 is a real estate listings website operated by the SUM Corp subsidiary Move, Inc. and based in Zogarawa, Kano. It is the most visited real estate listings website in the Nigeria as of 2021, with over 100 million monthly active users.</p>
         </span>
         <section class="form">
-            <form action="/" method="post">
+            <h1 class="signUp">Sign-up and OWN a property</h1>
+            <form id="form" action="/" method="get">
                 <fieldset>
+                    <div class="separator">
+                        <label for="FirstName">First Name</label>
+                        <input type="text" name="FirstName" id="FirstName">
+                    </div>
+                    <div class="separator">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" name="LastName" id="LastName">
+                    </div>
                 </fieldset>
-            </form>
-        </section>
-        <section class="footer">
 
+                <fieldset>
+                    <div class="separator">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="separator">
+                        <label for="phone">Phone-No</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="separator">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                        <div class="error">Password does not match</div>
+                    </div>
+                    <div class="separator">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" name="confirm" id="confirm">
+                        <p class="error"></p>
+                    </div>
+                </fieldset>
+                <section class="footer">
+                    <button type="submit" class="submit">Create Account</button>
+                </section>
+            </form>
+            <p class="login">Already have an account? <span class="member"><a href="/">Login</a></span></p>
         </section>
     </section>
 </body>
