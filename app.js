@@ -5,7 +5,6 @@ const error = document.querySelector('.error')
 
 
 formSubmit.addEventListener('submit',(e)=>{
-console.log('enter')
     e.preventDefault()
     checkPassword()
 })
